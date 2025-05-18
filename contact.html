@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - ElectroShop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>ElectroShop</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required/><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required/><br/><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert('Thank you for contacting us, ' + document.getElementById('name').value + '!');
+      // Aap isme backend integration kar sakte hain agar chaho
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ElectroShop - Electronics Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>ElectroShop</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Get the Best Electronic Gadgets</h2>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="products" class="product-grid">
+      <!-- 15 products -->
+      <div class="product-card">
+        <img src="assests/smartphone.jpg" alt="Smartphone" />
+        <h3>Smartphone</h3>
+        <p>₹12000</p>
+        <button onclick="addToCart('Smartphone', 12000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/laptop.jpg" alt="Laptop" />
+        <h3>Laptop</h3>
+        <p>₹45000</p>
+        <button onclick="addToCart('Laptop', 45000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/wireless earbuds.jpg" alt="Wireless Earbuds" />
+        <h3>Wireless Earbuds</h3>
+        <p>₹2500</p>
+        <button onclick="addToCart('Wireless Earbuds', 2500)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/tablet.jpg" alt="Tablet" />
+        <h3>Tablet</h3>
+        <p>₹15000</p>
+        <button onclick="addToCart('Tablet', 15000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Smartwatch.jpg" alt="Smartwatch" />
+        <h3>Smartwatch</h3>
+        <p>₹7000</p>
+        <button onclick="addToCart('Smartwatch', 7000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Camera.jpg" alt="Camera" />
+        <h3>Digital Camera</h3>
+        <p>₹25000</p>
+        <button onclick="addToCart('Digital Camera', 25000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Headphone.jpg" alt="Headphones" />
+        <h3>Headphones</h3>
+        <p>₹4000</p>
+        <button onclick="addToCart('Headphones', 4000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/powerbank.jpg" alt="Power Bank" />
+        <h3>Power Bank</h3>
+        <p>₹1200</p>
+        <button onclick="addToCart('Power Bank', 1200)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Bluetooth Speaker.jpg" alt="Bluetooth Speaker" />
+        <h3>Bluetooth Speaker</h3>
+        <p>₹3500</p>
+        <button onclick="addToCart('Bluetooth Speaker', 3500)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Moniter.jpg" alt="Monitor" />
+        <h3>Monitor</h3>
+        <p>₹11000</p>
+        <button onclick="addToCart('Monitor', 11000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Keyboard.jpg" alt="Keyboard" />
+        <h3>Keyboard</h3>
+        <p>₹1500</p>
+        <button onclick="addToCart('Keyboard', 1500)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/mouse.jpg" alt="Mouse" />
+        <h3>Mouse</h3>
+        <p>₹900</p>
+        <button onclick="addToCart('Mouse', 900)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/usb C flash drive.jpg" alt="USB Flash Drive" />
+        <h3>USB Flash Drive</h3>
+        <p>₹600</p>
+        <button onclick="addToCart('USB Flash Drive', 600)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/WiFi Router.jpg" alt="WiFi Router" />
+        <h3>WiFi Router</h3>
+        <p>₹2000</p>
+        <button onclick="addToCart('WiFi Router', 2000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assests/Charger.jpg" alt="Charger" />
+        <h3>Charger</h3>
+        <p>₹800</p>
+        <button onclick="addToCart('Charger', 800)">Add to Cart</button>
+      </div>
+    </section>
+  </div>
+
+  <a href="cart.html" class="floating-cart">🛒</a>
+  <a href="https://wa.me/917014150761" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">📱</a>
+
+  <script src="cart.js"></script>
+</body>
+</html>
